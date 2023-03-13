@@ -1,0 +1,514 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,body{
+    color: white;
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    height: 65vh;
+    background-image: url(zomato_img/header_image.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 1300px;
+    margin:0 auto ;
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav .logo{
+    font-size: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav ul a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+nav ul a:hover{
+    border-bottom: 2px solid white;
+}
+.header_content{
+    display: flex;
+    margin-top: 120px;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    
+    align-items: center;
+    /* place-content: center;
+    gap: 30px; */
+
+}
+
+.header_content img{
+    width: 300px;
+    height: 80px;
+}
+.header_content h1{
+    font-size: 48px;
+}
+.header_content .search{
+    width: 950px;
+    height: 70px;
+    background-color:white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    display: flex;
+    gap: 10px;
+}
+.search .logo{
+    color: red;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+   line-height: 1.4;
+   margin-top: 15px;
+   margin-left: 10px;
+    
+}
+.search .caret_down{
+    color:black;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+   line-height: 1.4;
+   margin-top: 15px;
+   margin-left: 10px;
+    
+}
+.search input{
+    width: 200px;
+    
+    height: 20px;
+    font-size: 20px;
+   line-height: 1.4;
+   margin-top: 15px;
+   margin-left: 5px;
+   border: none;
+    outline: none;
+}
+.search input::placeholder{
+    font-size: 20px;
+}
+
+.search .bar{
+    color: black;
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.search .search_bar{
+    color:black;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.search .search_restaurant{
+    color:gray;
+    font-size: 25px;
+    line-height: 1.4;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.card_section{
+ max-width:1300px;
+ margin: 0 auto;
+ margin-top: 100px;
+ display: flex;
+ justify-content:space-between;
+ 
+}
+.card{
+width: 400px;
+height: auto;
+border-radius: 10px;
+box-shadow: 2px 2px 5px 2px gray;
+display: flex;
+flex-direction: column;
+transition: transform 0.2s ease-in-out;
+}
+.card img{
+    width:400px;
+    height:200px ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card .card_content h1{       
+    font-size: 30px;
+    font-weight: 400;
+    margin: 5px 20px;
+    color: black;
+}
+.card .card_content p{
+    font-size: 25px;
+    margin: 5px 5px;
+    color: gray;
+}
+ 
+.collection{
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+.collection .collection_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.collection h2{
+    font-size: 50px;
+    color: black;
+    font-weight: 200px;
+}
+
+.collection div{
+    display:flex;
+    justify-content: space-between;
+}
+.collection p{
+    font-size: 25px;
+    color:black;
+}
+.right_collection {
+color:red;
+font-size: 25px;
+
+}
+.right_collection i{
+    padding-left: 30px;
+}
+.collection_main{
+    margin-top: 50px;
+    display: flex;
+    gap: 0px;
+
+}
+.collection_card{
+       
+    position: relative;
+}
+.collection_card img{
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 5px 2px gray;
+    
+}
+.collection_card .card1_content{
+    position: absolute;
+    top: 275px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.collection_card .card1_content h1{
+    font-size: 25px;
+   
+}
+.collection_card .card1_content span{
+    display: flex;
+}
+.collection_card .card1_content p{color: white;}
+.collection_card .card1_content i{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 7px;
+
+}
+.localities{
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.localities .box{
+display: grid;
+grid-template-columns: 400px 400px 400px;
+grid-template-rows: auto;
+grid-row-gap: 30px;
+grid-column-gap: 50px;
+margin:50px;
+align-items: center;
+
+}
+.localities h1{
+    color: black;
+    font-size: 48px;
+    padding-left: 30px;
+    font-weight: 100px;
+}
+.localities .box1{
+width: 400px;
+height: 100px;
+box-shadow: 2px 2px 5px 2px gray;
+padding: 10px;
+font-size: 25px;
+position: relative;
+color: black;
+}
+.localities .box1 .fa{
+    position: absolute;
+    top: 40%;
+    right:10%;
+    color: black;
+}
+.localities .box1 .cen{
+    text-align: center;
+    padding-top: 20px;
+
+}
+.localities .box1 .fa_down{
+    position: absolute;
+    top: 35%;
+    right:20%;
+    color: black;
+}
+.form_section{
+    width: 100%;
+    background-color: bisque;
+    }
+.form_section .main{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.form_section .ipad{
+    width: 500px;
+    
+    padding-top:50px ;
+    text-align: center;
+}
+.form_section .ipad img{
+    width: 400px;
+    height: auto;
+}
+.form_section .content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: black;
+}
+    .form_section .content h1{
+        font-size: 60px;
+        font-weight: 200px;
+    }
+    .form_section .content p{
+        font-size: 25px;
+        color: gray;
+    }
+    .form_section .content label{
+    font-size: 25px;
+    color: gray;
+    margin-right: 100px;
+    margin-left: 10px;
+}
+.form_section input[type='radio']{
+    width: 25px;
+    height: 25px;
+}
+    
+.form_section .data input{
+    width: 400px;
+    height: 70px;
+    border-radius: 10px;
+}
+.form_section .data input::placeholder{
+    font-size: 25px;
+    color: gray;
+    padding: 10px;
+    padding-left: 20px;
+}
+.form_section button{
+    width: 250px;
+    height: 70px;
+    background-color: red;
+    font-size: 30px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 10px;
+}
+.form_section .app img{
+width: 150px;
+height: 50px;
+margin-right: 50px;
+
+}
+.explore{
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.explore h1{padding-top: 10px;
+    font-size: 50px;
+    font-weight: 600;
+    color: black;
+
+}
+
+.explore .space{
+    width: 1300px;;
+    height: 100px;
+    background-color: white;
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+    color: black;
+    position: relative;
+    outline: none;
+
+}
+.explore p{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-weight: 50;
+}
+.explore .fa{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    font-size: 30px;
+
+}
+#footer{
+    background-color: whitesmoke;
+margin-top: 80px;
+}
+#footer .footer_top{
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .footer_top .zomato{
+    width: 200px;
+    height: 40px;
+}
+#footer .footer_top .right{
+    display: flex;
+    gap: 30px;
+}
+#footer .footer_top .ftright{
+    border: 2px solid gray;
+    color: black;
+height: 50px;
+border-radius: 10px;
+       margin-right:10px ;    
+    text-align: center;
+}
+#footer .footer_top .ftright img{
+    width: 50px;
+    height: 35px;
+    padding-left: 10px;
+    padding-top: 10px;
+padding-right: 10px;
+
+    
+}
+.footer_top .ftcontent{
+    font-size: 30px;
+
+}
+
+
+#footer .footer_top .ftleft{
+    border: 2px solid gray;
+    color: black;
+    height: 50px;
+    border-radius: 10px;
+    
+    
+    text-align: center;
+}
+#footer .footer_top .ftleft img{
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    
+}
+.footer_top .ftcontent{
+    font-size: 30px;
+
+}
+.footer_center{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+}
+.footer_box p{
+padding-bottom: 20px;
+color: gray;
+font-size: 20px;
+
+}
+.footer_box .title{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding-top: 30px;
+}
+.footer_box .social_icon img{
+width: 30px;
+height: 30px;
+margin-right: 8px;
+}
+
+.footer_box .google img{
+    padding-top: 20px;
+    width: 200px;
+    height: auto;
+
+}
+.footer_box .apple img{
+    width: 200px;
+    height: auto;
+    padding-top: 20px;
+}
+.footer_bottom{
+    width: 1300px;
+    margin: 0 auto;
+}
+.footer_bottom p{
+    font-size: 20px;
+    color: gray;
+    padding-top: 50px;
+    text-align: justify;
+    padding-bottom: 50px;
+}
